@@ -1,11 +1,11 @@
 module.exports = (sequelize, DataTypes) => {
-    const Customer = sequelize.define('partida', {
+    const Partida = sequelize.define('partida', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        data: DataTypes.timestamps,
+        data_partida: DataTypes.DATE,
         selecao_mandante: DataTypes.STRING,
         selecao_visitante: DataTypes.STRING,
         gol_mandante: DataTypes.INTEGER,
@@ -18,5 +18,5 @@ module.exports = (sequelize, DataTypes) => {
             freezeTableName: true
         })
 
-    return Customer
+    return Partida
 }

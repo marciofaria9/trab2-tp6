@@ -1,11 +1,11 @@
-FROM node:latest
+FROM node:alpine
 
 WORKDIR /usr/app
-COPY package.json ./
+COPY package*.json ./
 RUN npm install
 
 COPY . .
-
+ 
 EXPOSE 8087
 
-CMD ["npm","start"]
+CMD ["npm","start"] 

@@ -1,5 +1,5 @@
 const express = require('express')
-const router = require('./router/customer.route')
+const router = require('./router/partida.route')
 
 const app = express()
 app.use(express.json())
