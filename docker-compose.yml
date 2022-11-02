@@ -1,22 +1,28 @@
 version: '3'
 
 services: 
-  app: 
-    build: .
-    command: yarn start
-    ports: 
-      - '3000:3000'
-    volumes: 
-      - .:/usr/app
-
   db:
     container_name: 'database-node'
     image: postgres:10.17
     restart: always
     ports: 
-      - 5441:5432
+      - 5433:5432
     environment: 
       - "POSTGRES_USER=admin"
       - "POSTGRES_PASSWORD=admin"
       - "POSTGRES_DB=admin"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  app: 
+    build: .
+    command: npm start
+    ports: 
+      - '8087:8087'
+    volumes: 
+      - .:/usr/app
+    depends_on:
+      - db
+
+
       
