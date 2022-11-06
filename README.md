@@ -60,8 +60,10 @@ http://localhost:8087/api/v1/worldcup/1
 
 ``` 
 http://localhost:8087/api/v1/worldcup
+
 Exemplo de Update:
 http://localhost:8087/api/v1/worldcup/1
+
     {
         "id": 1,
         "data_partida": "2022-12-01",
