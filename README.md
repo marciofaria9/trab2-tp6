@@ -1,5 +1,5 @@
 # Trabalho 2 - TP6 - NODE API
-Esse repositório contém uma API feita em NODE,que motivada pela Copa do Mundo do Catar 2022, armazena partidas em um banco de dados Postgres.
+Esse repositório contém uma API feita em NODE,que motivada pela Copa do Mundo do Catar 2022, armazena partidas de futebol em um banco de dados Postgres.
 Utilizando o docker-compose, cria um container contendo a aplicação e outro contendo o banco de dados.
 (É necessário ter o Docker Desktop instalado na sua máquina)
 
@@ -7,7 +7,7 @@ Utilizando o docker-compose, cria um container contendo a aplicação e outro co
 ## Clonando o repositóro e subindo os containers
 ```
 git clone https://github.com/marciofaria9/trab2-tp6.git
-cd cd trab2-tp6
+cd trab2-tp6
 docker-compose-up
 ```
 
