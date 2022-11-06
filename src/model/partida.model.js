@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        data_partida: DataTypes.DATE,
+        data_partida: DataTypes.DATE, 
         selecao_mandante: DataTypes.STRING,
         selecao_visitante: DataTypes.STRING,
         gol_mandante: DataTypes.INTEGER,
@@ -14,9 +14,11 @@ module.exports = (sequelize, DataTypes) => {
     },
 
         {
-            timestamps: true,
-            freezeTableName: true
+            timestamps: false,
+            freezeTableName: false
         })
 
     return Partida
 }
+
+

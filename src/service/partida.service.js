@@ -16,6 +16,15 @@ const getPartidaById = async partidaId => {
     })
 }
 
+const getPartidaByDate = async partidaDate => {
+    return await partida.findAll({
+        where: {
+            data_partida: partidaDate
+        }
+    })
+}
+
+
 const update = async (partidaId, data) => {
     return await partida.update(data, {
         where: {
@@ -37,5 +46,6 @@ module.exports = {
     getAll,
     getPartidaById,
     update,
-    remove
+    remove,
+    getPartidaByDate
 }
