@@ -8,7 +8,7 @@ Utilizando o docker-compose, cria um container contendo a aplicação e outro co
 ```
 git clone https://github.com/marciofaria9/trab2-tp6.git
 cd trab2-tp6
-docker-compose-up
+docker-compose up
 ```
 
 ## Endpoint da API para realizar o POST:
