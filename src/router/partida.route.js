@@ -8,6 +8,7 @@ router.post('/', controller.create)
 router.get('/:id', controller.getPartidaById)
 router.put('/:id', controller.update)
 router.delete('/:id', controller.remove)
+router.get('/selecao/:time', controller.getPartidaByTime)
 
 
 module.exports = router

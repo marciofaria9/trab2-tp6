@@ -2,7 +2,7 @@ const service = require('../service/partida.service')
 
 const create = async (req, res) => {
     await service.create(req.body)
-    res.status(201).send('partida created')
+    res.status(201).send('partida criada')
 }
 
 const getAll = async (req, res) => {
@@ -20,17 +20,21 @@ const getPartidaByDate = async (req, res) => {
     res.send(await service.getPartidaByDate(partidaDate))
 }
 
+const getPartidaByTime = async (req, res) => {
+    const partidaTime = String(req.params.time)
+    res.send(await service.getPartidaByTime(partidaTime))
+}
 
 const update = async (req, res) => {
     const partidaId = req.params.id
     await service.update(partidaId, req.body)
-    res.status(200).send('partida updated')
+    res.status(200).send('partida alterada')
 }
 
 const remove = async (req, res) => {
     const partidaId = req.params.id
     await service.remove(partidaId)
-    res.status(204).send('')
+    res.status(204).send('Partida deletada')
 }
 
 module.exports = {
@@ -39,5 +43,6 @@ module.exports = {
     getPartidaById,
     update,
     remove,
-    getPartidaByDate
+    getPartidaByDate,
+    getPartidaByTime
 }

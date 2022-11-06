@@ -1,4 +1,6 @@
 const { partida } = require('../model/index')
+const { Op } = require('sequelize')
+
 
 const create = async data => {
     await partida.create(data)
@@ -24,6 +26,16 @@ const getPartidaByDate = async partidaDate => {
     })
 }
 
+const getPartidaByTime = async partidaTime => {
+    return await partida.findAll({
+        where: {
+            [Op.or]: [
+                {selecao_mandante: partidaTime},
+                {selecao_visitante: partidaTime}
+            ]
+        }
+    })
+}
 
 const update = async (partidaId, data) => {
     return await partida.update(data, {
@@ -47,5 +59,6 @@ module.exports = {
     getPartidaById,
     update,
     remove,
-    getPartidaByDate
+    getPartidaByDate,
+    getPartidaByTime
 }
