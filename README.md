@@ -36,7 +36,7 @@ http://localhost:8087/api/v1/worldcup
 ``` 
 http://localhost:8087/api/v1/worldcup
 ``` 
-###Exemplo de Busca:
+### Exemplo de Busca:
 ``` 
 http://localhost:8087/api/v1/worldcup/2
 ``` 
@@ -44,7 +44,7 @@ http://localhost:8087/api/v1/worldcup/2
 ``` 
 http://localhost:8087/api/v1/worldcup/data
 ``` 
-###Exemplo de Busca:
+### Exemplo de Busca:
 ``` 
 http://localhost:8087/api/v1/worldcup/data/2022-11-28
 ``` 
@@ -53,7 +53,7 @@ http://localhost:8087/api/v1/worldcup/data/2022-11-28
 ``` 
 http://localhost:8087/api/v1/worldcup/selecao
 ``` 
-###Exemplo de Busca:
+### Exemplo de Busca:
 ``` 
 http://localhost:8087/api/v1/worldcup/selecao/Brasil
 ``` 
@@ -62,7 +62,7 @@ http://localhost:8087/api/v1/worldcup/selecao/Brasil
 ``` 
 http://localhost:8087/api/v1/worldcup
 ``` 
-###Exemplo de delete:
+### Exemplo de delete:
 ``` 
 http://localhost:8087/api/v1/worldcup/1
 ``` 
@@ -72,7 +72,7 @@ http://localhost:8087/api/v1/worldcup/1
 ``` 
 http://localhost:8087/api/v1/worldcup
 ``` 
-###Exemplo de Update:
+### Exemplo de Update:
 ``` 
 http://localhost:8087/api/v1/worldcup/1
 
