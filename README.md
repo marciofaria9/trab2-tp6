@@ -3,6 +3,11 @@ Esse repositório contém uma API feita em NODE,que motivada pela Copa do Mundo 
 Utilizando o docker-compose, cria um container contendo a aplicação e outro contendo o banco de dados.
 (É necessário ter o Docker Desktop instalado na sua máquina)
 
+## Download da imagem do Docker Hub
+# Use o comando:
+```
+docker push marciofariajr/api-tp6:tagname
+```
 
 ## Clonando o repositóro e subindo os containers
 ```
@@ -10,7 +15,6 @@ git clone https://github.com/marciofaria9/trab2-tp6.git
 cd trab2-tp6
 docker-compose up
 ```
-
 ## Endpoint da API para realizar o POST:
 ```
 http://localhost:8087/api/v1/worldcup
