@@ -35,32 +35,35 @@ http://localhost:8087/api/v1/worldcup
 ## Endpoint para GET buscando por ID
 ``` 
 http://localhost:8087/api/v1/worldcup
-
-Exemplo de Busca:
+``` 
+###Exemplo de Busca:
+``` 
 http://localhost:8087/api/v1/worldcup/2
 ``` 
-
 ## Endpoint para GET buscando por Data
 ``` 
 http://localhost:8087/api/v1/worldcup/data
-
-Exemplo de Busca:
+``` 
+###Exemplo de Busca:
+``` 
 http://localhost:8087/api/v1/worldcup/data/2022-11-28
 ``` 
 
 ## Endpoint para GET buscando por Seleção
 ``` 
 http://localhost:8087/api/v1/worldcup/selecao
-
-Exemplo de Busca:
+``` 
+###Exemplo de Busca:
+``` 
 http://localhost:8087/api/v1/worldcup/selecao/Brasil
 ``` 
 
 ## Endpoint para delete
 ``` 
 http://localhost:8087/api/v1/worldcup
-
-Exemplo de delete:
+``` 
+###Exemplo de delete:
+``` 
 http://localhost:8087/api/v1/worldcup/1
 ``` 
 
@@ -68,8 +71,9 @@ http://localhost:8087/api/v1/worldcup/1
 
 ``` 
 http://localhost:8087/api/v1/worldcup
-
-Exemplo de Update:
+``` 
+###Exemplo de Update:
+``` 
 http://localhost:8087/api/v1/worldcup/1
 
     {
