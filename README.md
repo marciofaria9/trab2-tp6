@@ -6,7 +6,7 @@ Utilizando o docker-compose, cria um container contendo a aplicação e outro co
 ## Download da imagem do Docker Hub
 ### Use o comando:
 ```
-docker push marciofariajr/api-tp6:tagname
+docker push marciofariajr/api-tp6:1.0.0 .
 ```
 
 ## Clonando o repositóro e subindo os containers
