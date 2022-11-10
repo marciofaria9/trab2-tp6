@@ -9,7 +9,7 @@ Utilizando o docker-compose, cria um container contendo a aplicação e outro co
 docker pull marciofariajr/api-tp6
 ```
 
-## Clonando o repositóro e subindo os containers
+## Clonando o repositóro e subindo os containers (já sobe fazendo inserts de jogos no BD)
 ```
 git clone https://github.com/marciofaria9/trab2-tp6.git
 cd trab2-tp6
